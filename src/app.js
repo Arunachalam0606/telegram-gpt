@@ -23,6 +23,7 @@ const bot = new TelegramBot(token, {
     host: "0.0.0.0",
   },
 });
+
 // bot.setWebHook(
 //   "https://301a-2401-4900-1f2d-aa68-bdb2-1d2d-f41a-b9ba.in.ngrok.io/bot5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo"
 // );
