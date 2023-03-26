@@ -17,9 +17,9 @@ const bot = new TelegramBot(token, {
   },
 });
 
-bot.setWebHook(
-  "https://9b36-2401-4900-1f2d-aa68-bdb2-1d2d-f41a-b9ba.in.ngrok.io/bot5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo"
-);
+// bot.setWebHook(
+//   "https://9b36-2401-4900-1f2d-aa68-bdb2-1d2d-f41a-b9ba.in.ngrok.io/bot5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo"
+// );
 
 // Load API key from file or ask user for it
 const fs = require("fs");
