@@ -16,11 +16,19 @@ const gptEndpoint =
 //   },
 // });
 
-const port = process.env.PORT || 3000;
+// const port = process.env.PORT || 3000;
+// const bot = new TelegramBot(token, {
+//   webHook: {
+//     port: port,
+//     host: "0.0.0.0",
+//   },
+// });
+
 const bot = new TelegramBot(token, {
   webHook: {
     port: port,
     host: "0.0.0.0",
+    url: "https://orange-mud-099fc6100.2.azurestaticapps.net",
   },
 });
 
