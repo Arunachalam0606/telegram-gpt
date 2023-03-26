@@ -6,19 +6,25 @@ const fetch = (...args) =>
 const token = "5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo";
 
 // replace the value below with the API endpoint for your GPT-3 instance
-// const gptEndpoint = "https://api.openai.com/v1/engines/davinci-002/completions";
 const gptEndpoint =
   "https://api.openai.com/v1/engines/text-davinci-003/completions";
 
+// const bot = new TelegramBot(token, {
+//   webHook: {
+//     port: process.env.PORT || 3000,
+//     host: "0.0.0.0",
+//   },
+// });
+
+const port = process.env.PORT || 3000;
 const bot = new TelegramBot(token, {
   webHook: {
-    port: process.env.PORT || 3000,
+    port: port,
     host: "0.0.0.0",
   },
 });
-
 // bot.setWebHook(
-//   "https://9b36-2401-4900-1f2d-aa68-bdb2-1d2d-f41a-b9ba.in.ngrok.io/bot5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo"
+//   "https://301a-2401-4900-1f2d-aa68-bdb2-1d2d-f41a-b9ba.in.ngrok.io/bot5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo"
 // );
 
 // Load API key from file or ask user for it

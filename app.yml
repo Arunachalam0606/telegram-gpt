@@ -3,6 +3,10 @@ version: 1.0.0
 node_version: "14.x"
 
 routes:
+  - route: /app.js
+    serve: src/app.js
+    allow: GET, POST, HEAD
+
   - route: /.*
     rewrite: /index.html
     allow: GET, POST, HEAD
