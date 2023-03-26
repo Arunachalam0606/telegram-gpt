@@ -23,7 +23,7 @@ const gptEndpoint =
 //     host: "0.0.0.0",
 //   },
 // });
-
+const port = process.env.PORT || 3000;
 const bot = new TelegramBot(token, {
   webHook: {
     port: port,
