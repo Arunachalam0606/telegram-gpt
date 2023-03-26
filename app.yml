@@ -1,0 +1,8 @@
+name: telegram-gpt
+version: 1.0.0
+node_version: "14.x"
+
+routes:
+  - route: /.*
+    rewrite: /index.html
+    allow: GET, POST, HEAD
