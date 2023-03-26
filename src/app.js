@@ -36,6 +36,7 @@ if (fs.existsSync("./openaiapikey.txt")) {
   openaiApiKey = fs.readFileSync("./openaiapikey.txt").toString().trim();
 } else {
   console.log("API key not found. Please set your OpenAI API key now:");
+
   bot.on("message", async (msg) => {
     if (msg.text.trim().toLowerCase() === "set api key") {
       bot.sendMessage(msg.chat.id, "Please enter your OpenAI API key:");
