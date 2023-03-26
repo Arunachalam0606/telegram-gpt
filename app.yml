@@ -8,5 +8,5 @@ routes:
     allow: GET, POST, HEAD
 
   - route: /.*
-    rewrite: /index.html
+    rewrite: src/index.html
     allow: GET, POST, HEAD
