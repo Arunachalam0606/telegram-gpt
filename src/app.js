@@ -7,8 +7,7 @@ const token = "5762320147:AAG4Jo-x4txQbu5NLQC1rqaR1iz4d7z0BBo";
 
 // replace the value below with the API endpoint for your GPT-3 instance
 // const gptEndpoint = "https://api.openai.com/v1/engines/davinci-002/completions";
-const gptEndpoint =
-  "https://api.openai.com/v1/engines/text-davinci-003/completions";
+const gptEndpoint = "https://orange-mud-099fc6100.2.azurestaticapps.net";
 
 const bot = new TelegramBot(token, {
   webHook: {
